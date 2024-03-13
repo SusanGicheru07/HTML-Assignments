@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="En">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Susan Gicheru">
+        <title>HTML Forms</title>
+        <style>
+            body {
+                background-color: brown;
+                color: black;
+                font-size: larger;
+                padding: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post">
+            <div>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your last name" required aria-required="true">
+            </div>
+            <br>
+            <div>
+                <label for DOB>Date of Birth:</label>
+                <input type="date" id="DOB" name="DOB" value="DOB" required aria-required="true">
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="Gender" required aria-required="true">
+
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="Gender" required aria-required="true">
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required aria-required="true"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label for="number">Telephone No.</label>
+                <input type="tel" id="number" name="number" required aria-required="true">
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com" required aria-required="">
+            </div>
+            <br>
+
+            <div>
+                <label for="course">Course</label>
+                <input type="text" id="course" name="course" required aria-required="true">
+            </div>
+
+            <br>
+            <div>
+                
+                <button type="submit">Register</button>
+                
+                <button type="reset">Cancel</button>
+                
+
+            </div>
+        </form>
+    </body>
+</html>
